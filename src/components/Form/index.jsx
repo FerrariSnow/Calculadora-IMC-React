@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./form.css";
+import styles from "./Form.module.css";
 
 const Form = () => {
     const [altura, setAltura] = useState(0);
@@ -55,7 +55,7 @@ const Form = () => {
     };
 
     return (
-        <form className="container">
+        <form className={styles.container}>
             <div>
                 <label htmlFor="altura">Informe sua altura em cm:</label>
                 <input
