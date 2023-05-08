@@ -2,8 +2,9 @@
     background-color: #666;
     text-align: center;
     color: #fff;
-    margin-bottom: 18px;
-    margin: 0 auto;
+    margin: auto auto;
+    height: 80px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -12,7 +12,7 @@ const Form = () => {
 
         if (!verificaCampos()) {
             return (
-                <span>
+                <span className={styles.vazio}>
                     Por gentileza informe 3 dígitos na altura e 2 digitos no
                     peso.
                 </span>
@@ -20,27 +20,31 @@ const Form = () => {
         } else {
             if (resultado < 18.5) {
                 return (
-                    <span>Seu IMC é {resultado} e você está muito magro.</span>
+                    <span className={styles.info}>
+                        Seu IMC é {resultado} e você está muito magro.
+                    </span>
                 );
             } else if (resultado < 24.9) {
                 return (
-                    <span>
+                    <span className={styles.info}>
                         Seu IMC é {resultado} e você está com peso normal.
                     </span>
                 );
             } else if (resultado < 29.9) {
                 return (
-                    <span>Seu IMC é {resultado} e você está em sobrepeso.</span>
+                    <span className={styles.info}>
+                        Seu IMC é {resultado} e você está em sobrepeso.
+                    </span>
                 );
             } else if (resultado < 39.9) {
                 return (
-                    <span>
+                    <span className={styles.info}>
                         Seu IMC é {resultado} e você está com obesidade.
                     </span>
                 );
             } else {
                 return (
-                    <span>
+                    <span className={styles.info}>
                         Seu IMC é {resultado} e você está com obesidade grave.
                     </span>
                 );
