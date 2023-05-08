@@ -12,7 +12,7 @@ O projeto está hospedado na plataforma Vercel e pode ser acessado através do s
 
 ## Tecnologias Utilizadas
 
-O clone foi desenvolvido utilizando as seguintes tecnologias:
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - HTML
 - CSS
